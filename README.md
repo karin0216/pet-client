@@ -1,6 +1,6 @@
 This was created during our time as a student at Code Chrysalis.
 # 🐶🐢🐱🐰 Pet Pals (Client) 🦜🐷🐭🦦
-This is the client side repository. You need to run the server side at the same time. This is [Server Repository](https://github.com/Team-Freshly-Washed-Turtles/pet-server).
+This is the client side repository. You need to run the server side at the same time. This is [Server Repository](https://github.com/karin0216/pet-server).
 
 1. [About　💁](#about-)
 2. [Features　✨](#features-)
