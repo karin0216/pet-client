@@ -27,7 +27,7 @@ When a carer sends a request to meet a pet, it will be notified to the owner in 
 You can try the live application [here](https://stupefied-leakey-aa78c8.netlify.app/).  
 # Requirements 🙏
 To use this application, 
-* This is the client side repository. You need to run the server side at the same time. This is [Server Repository](https://github.com/Team-Freshly-Washed-Turtles/pet-server).
+* This is the client side repository. You need to run the server side at the same time. This is [Server Repository](https://github.com/karin0216/pet-server).
 * You need **Node.js**, **yarn** installed on your computer. Also, you need to use **mongodb** on your computer or on cloud.
 # Getting Started 🎬
 #### 1. Install Dependencies
