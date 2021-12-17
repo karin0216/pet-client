@@ -7,7 +7,7 @@ import {
 } from "../../slicers/petSlice";
 import { useDispatch, useSelector } from "react-redux";
 import "../../styles/owners/petSettings.scss";
-import { submitPicForPet } from "../../util/uploadImage";
+import { submitPicForPet } from "../../utils/uploadImage";
 
 const UpdatePetInfo = () => {
   const [errorMessage, setErrorMessage] = useState("");
@@ -75,7 +75,8 @@ const UpdatePetInfo = () => {
           type="text"
           className="input"
           placeholder={petInfo.description}
-          {...register("description")}></textarea>
+          {...register("description")}
+        ></textarea>
         <button className="btn btn-primary saveBtn">Save</button>
       </form>
       <h2 style={{ marginTop: 30 }}>Update Questionnaire</h2>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { signUp } from "../slicers/userSlice";
-import { submitPic } from "../util/uploadImage";
+import { submitPic } from "../utils/uploadImage";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
@@ -155,7 +155,8 @@ export default function Step3Carer() {
           <textarea
             type="text"
             placeholder="Bio"
-            {...register("description")}></textarea>
+            {...register("description")}
+          ></textarea>
           <div className="error">{errors.description?.message}</div>
           <ul>
             {typeTags.map((type, i) => (

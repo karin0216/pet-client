@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
-import { submitPic } from "../util/uploadImage";
+import { submitPic } from "../utils/uploadImage";
 
 const UpdateUserInfo = () => {
   const [errorMessage, setErrorMessage] = useState("");

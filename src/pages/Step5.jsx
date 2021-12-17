@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { signUp } from "../slicers/userSlice";
 import { petDataStore } from "../slicers/petSlice";
-import { submitPic, submitPicForPet } from "../util/uploadImage";
+import { submitPic, submitPicForPet } from "../utils/uploadImage";
 import QuestionForm from "../components/owners/QuestionForm";
 import "../styles/registration/step5.scss";
 
