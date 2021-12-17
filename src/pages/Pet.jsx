@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import DatePicker from "../components/DatePicker";
 import "../styles/carer/pet.scss";
-import samplePet from "../assets/sampleDog2.jpeg";
 import { useLocation, Link } from "react-router-dom";
 import Gallery from "../components/gallery/Gallery";
 import axios from "axios";
@@ -71,10 +70,8 @@ const Pet = () => {
   return (
     <main className="petMain">
       <div className="container-fluid p-3 align-items-center">
-        {/** TODO: Replace PetCard with the actual PetInfo component */}
         <section className="petOptions">
           <DatePicker isDateBlocked={isDateInApprovedRequest} />
-          {/*TODO: Pet , Pet Questions, selected dates required to the Link*/}
           <Link
             to="/carer/questionnaire"
             state={{ pet: pet }}
@@ -97,13 +94,11 @@ const Pet = () => {
         <section className="petFlexBox">
           <figure>
             <div className="mainPic">
-              {pet.pet_pictures && pet.pet_pictures.length >= 1 ? (
+              {pet.pet_pictures && pet.pet_pictures.length >= 1 && (
                 <img
                   src={`${REACT_APP_SERVER_URL}/pic/${pet.pet_pictures[0]}`}
                   alt="pet pic"
                 />
-              ) : (
-                <img src={samplePet} alt="pet" />
               )}
             </div>
           </figure>

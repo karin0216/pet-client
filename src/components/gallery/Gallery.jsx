@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../../styles/gallery/gallery.scss";
-import samplePet from "../../assets/sampleDog2.jpeg";
 const { REACT_APP_SERVER_URL } = process.env;
 
 const Gallery = ({ petImg }) => {
@@ -17,19 +16,17 @@ const Gallery = ({ petImg }) => {
   return (
     <>
       <div className={`fullScreenImg ${fullScreen === true && "hideImage"}`}>
-        {petImg.length ? (
+        {petImg.length && (
           <img
             src={`${REACT_APP_SERVER_URL}/pic/${petImg[currImg]}`}
             alt="img"
           />
-        ) : (
-          <img src={samplePet} alt="pet" />
         )}
 
         <i className="fa fa-close" onClick={() => setFullScreen(false)}></i>
       </div>
       <section className="gallerySection">
-        {petImg.length ? (
+        {petImg.length &&
           petImg.map((img, i) => (
             <img
               src={`${REACT_APP_SERVER_URL}/pic/${img}`}
@@ -37,10 +34,7 @@ const Gallery = ({ petImg }) => {
               onClick={() => openImg(i)}
               key={i}
             />
-          ))
-        ) : (
-          <img src={samplePet} alt="pet" />
-        )}
+          ))}
       </section>
     </>
   );
