@@ -6,10 +6,7 @@ export const submitPic = async (imageInput) => {
     const formData = new FormData();
     formData.append("file", imageInput);
 
-    const response = await axios.post(
-      `${REACT_APP_SERVER_URL}/pic/upload`,
-      formData
-    );
+    const response = await axios.post(`${REACT_APP_SERVER_URL}/pics`, formData);
     return response.data[0].filename;
   } catch (err) {
     console.log(err);
@@ -23,10 +20,7 @@ export const submitPicForPet = async (imageInput) => {
       formData.append("file", image);
       formData.append("name", Date.now() + image.name);
     });
-    const response = await axios.post(
-      `${REACT_APP_SERVER_URL}/pic/upload`,
-      formData
-    );
+    const response = await axios.post(`${REACT_APP_SERVER_URL}/pics`, formData);
 
     return response.data.map((res) => res.filename);
   } catch (err) {

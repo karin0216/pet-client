@@ -9,7 +9,7 @@ const PetCard = ({ pet }) => {
       <div className="card-sl">
         <div className="card-image">
           <img
-            src={`${REACT_APP_SERVER_URL}/pic/${pet.pet_pictures[0]}`}
+            src={`${REACT_APP_SERVER_URL}/pics/${pet.pet_pictures[0]}`}
             alt="pet"
           />
         </div>

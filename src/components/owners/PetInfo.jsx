@@ -42,8 +42,9 @@ const PetInfo = () => {
       <figure className="petPic">
         {ownersPet.pet_pictures && (
           <img
-            src={`${REACT_APP_SERVER_URL}/pic/${ownersPet.pet_pictures[0]}`}
-            alt="Pet"></img>
+            src={`${REACT_APP_SERVER_URL}/pics/${ownersPet.pet_pictures[0]}`}
+            alt="Pet"
+          ></img>
         )}
       </figure>
       <div className="petSchedule">

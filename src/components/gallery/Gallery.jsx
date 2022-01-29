@@ -18,7 +18,7 @@ const Gallery = ({ petImg }) => {
       <div className={`fullScreenImg ${fullScreen === true && "hideImage"}`}>
         {petImg.length && (
           <img
-            src={`${REACT_APP_SERVER_URL}/pic/${petImg[currImg]}`}
+            src={`${REACT_APP_SERVER_URL}/pics/${petImg[currImg]}`}
             alt="img"
           />
         )}
@@ -29,7 +29,7 @@ const Gallery = ({ petImg }) => {
         {petImg.length &&
           petImg.map((img, i) => (
             <img
-              src={`${REACT_APP_SERVER_URL}/pic/${img}`}
+              src={`${REACT_APP_SERVER_URL}/pics/${img}`}
               alt="pet"
               onClick={() => openImg(i)}
               key={i}

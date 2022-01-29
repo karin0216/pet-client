@@ -12,8 +12,9 @@ const UserProfile = () => {
           <div className="figure">
             <figure>
               <img
-                src={`${REACT_APP_SERVER_URL}/pic/${user.profile_picture}`}
-                alt="profile"></img>
+                src={`${REACT_APP_SERVER_URL}/pics/${user.profile_picture}`}
+                alt="profile"
+              ></img>
             </figure>
           </div>
           <div className="profileInfo">

@@ -23,7 +23,7 @@ const Request = () => {
           requests.map((req) => (
             <div className="request">
               <img
-                src={`${REACT_APP_SERVER_URL}/pic/${req.profile_picture}`}
+                src={`${REACT_APP_SERVER_URL}/pics/${req.profile_picture}`}
                 alt="img"
               />
               <div className="requestInfo">

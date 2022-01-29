@@ -7,7 +7,7 @@ const RequestCell = ({ sched }) => {
       <figure>
         <img
           alt="img"
-          src={`${REACT_APP_SERVER_URL}/pic/${sched.profile_picture}`}
+          src={`${REACT_APP_SERVER_URL}/pics/${sched.profile_picture}`}
         />
       </figure>
 
