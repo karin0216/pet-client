@@ -96,7 +96,7 @@ const Pet = () => {
             <div className="mainPic">
               {pet.pet_pictures && pet.pet_pictures.length >= 1 && (
                 <img
-                  src={`${REACT_APP_SERVER_URL}/pic/${pet.pet_pictures[0]}`}
+                  src={`${REACT_APP_SERVER_URL}/pics/${pet.pet_pictures[0]}`}
                   alt="pet pic"
                 />
               )}
